@@ -35,7 +35,7 @@ def ELMM(data,A_init,S0,lambda_S):
     [L,P] = S0.shape 
     
    # A = np.zeros([P,N])
-    A = A_init
+    A = np.copy(A_init)
     S = np.zeros([L,P,N])
     psi = np.ones([P,N])
     
